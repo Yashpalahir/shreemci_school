@@ -8,7 +8,7 @@ document.getElementById("studentForm").addEventListener("submit", async function
     };
 
     try {
-        const response = await fetch("http://localhost:5000/submit", {
+        const response = await fetch("https://mcischool.onrender.com/submit", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
@@ -22,7 +22,7 @@ document.getElementById("studentForm").addEventListener("submit", async function
         alert("✅ Form submitted successfully!");
 
         // ✅ Open PDF from the main folder in a new tab
-        window.open("http://localhost:5000/sample.pdf", "_blank");
+        window.open("https://mcischool.onrender.com/sample.pdf", "_blank");
 
     } catch (error) {
         console.error("🚨 Server Error:", error);
