@@ -3,6 +3,7 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 // ✅ Serve static files (so index.html, styles.css, and script.js work)
 app.use(express.static(__dirname));
@@ -44,7 +45,7 @@ app.get("/sample.pdf", (req, res) => {
 });
 
 // ✅ Start server
-const PORT = 5000;
+
 app.listen(PORT, () => {
     console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
