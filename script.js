@@ -3,8 +3,10 @@ document.getElementById("studentForm").addEventListener("submit", async function
 
     const formData = {
         name: document.getElementById("name").value,
+        standard: document.getElementById("standard").value,
         mobile: document.getElementById("mobile").value,
-        city: document.getElementById("city").value
+        vehicle: document.getElementById("vehicle").value,
+        hostel: document.getElementById("hostel").value
     };
 
     try {
