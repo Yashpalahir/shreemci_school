@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 
 // ✅ Form submission route
 app.post("/submit", (req, res) => {
-    const { name, mobile, city } = req.body;
+    const { name, standard, mobile, vehicle, hostel } = req.body;
     console.log("Received data:", req.body);
 
     // ✅ Save data to JSON file
@@ -33,7 +33,7 @@ app.post("/submit", (req, res) => {
         existingData = JSON.parse(fs.readFileSync(filePath, "utf8"));
     }
 
-    existingData.push({ name, mobile, city });
+    existingData.push({ name, standard, mobile, vehicle, hostel });
     fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2));
 
     res.json({ message: "✅ Data saved successfully!" });
