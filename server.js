@@ -40,8 +40,8 @@ app.post("/submit", (req, res) => {
 });
 
 // ✅ Route to serve PDF from the main folder
-app.get("/sample.pdf", (req, res) => {
-    res.sendFile(path.join(__dirname, "sample.pdf"));
+app.get("/MCI.pdf", (req, res) => {
+    res.sendFile(path.join(__dirname, "MCI.pdf"));
 });
 
 // ✅ Start server
