@@ -24,7 +24,7 @@ document.getElementById("studentForm").addEventListener("submit", async function
         alert("✅ Form submitted successfully!");
 
         // ✅ Open PDF from the main folder in a new tab
-        window.open("https://mcischool.onrender.com/sample.pdf", "_blank");
+        window.open("https://mcischool.onrender.com/MCI.pdf", "_blank");
 
     } catch (error) {
         console.error("🚨 Server Error:", error);
